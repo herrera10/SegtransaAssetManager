@@ -524,7 +524,6 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Fron
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmUsuariosAgrega.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmUsuariosModifica.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Frontend.Inicio.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.InicioNoAdmin.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.FormProveedores.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Properties.Resources.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.GenerateResource.cache

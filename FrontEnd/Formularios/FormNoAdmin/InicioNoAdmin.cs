@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FrontEnd
+namespace FrontEnd.Formularios.FormNoAdmin
 {
     public partial class InicioNoAdmin : Form
     {
         public InicioNoAdmin()
         {
             InitializeComponent();
-        }
-
-        private void InicioNoAdmin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

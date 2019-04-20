@@ -1,4 +1,4 @@
-﻿namespace FrontEnd
+﻿namespace FrontEnd.Formularios.FormNoAdmin
 {
     partial class InicioNoAdmin
     {
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // InicioNoAdmin
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "InicioNoAdmin";
             this.Text = "InicioNoAdmin";
-            this.Load += new System.EventHandler(this.InicioNoAdmin_Load);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

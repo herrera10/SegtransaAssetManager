@@ -147,7 +147,7 @@
             this.garantiaDataGridViewTextBoxColumn});
             this.tablaActivos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tablaActivos.DataSource = this.activosBindingSource;
-            this.tablaActivos.Location = new System.Drawing.Point(12, 175);
+            this.tablaActivos.Location = new System.Drawing.Point(2, 177);
             this.tablaActivos.Name = "tablaActivos";
             this.tablaActivos.ReadOnly = true;
             this.tablaActivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -157,7 +157,7 @@
             this.tablaActivos.ShowCellToolTips = false;
             this.tablaActivos.ShowEditingIcon = false;
             this.tablaActivos.ShowRowErrors = false;
-            this.tablaActivos.Size = new System.Drawing.Size(727, 151);
+            this.tablaActivos.Size = new System.Drawing.Size(777, 151);
             this.tablaActivos.TabIndex = 33;
             this.tablaActivos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaActivos_CellContentClick);
             // 
@@ -177,59 +177,74 @@
             // 
             // idActivoDataGridViewTextBoxColumn
             // 
+            this.idActivoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.idActivoDataGridViewTextBoxColumn.DataPropertyName = "IdActivo";
             this.idActivoDataGridViewTextBoxColumn.FillWeight = 266.4975F;
             this.idActivoDataGridViewTextBoxColumn.HeaderText = "IdActivo";
             this.idActivoDataGridViewTextBoxColumn.Name = "idActivoDataGridViewTextBoxColumn";
             this.idActivoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idActivoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.idActivoDataGridViewTextBoxColumn.Width = 71;
             // 
             // codActivoDataGridViewTextBoxColumn
             // 
+            this.codActivoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.codActivoDataGridViewTextBoxColumn.DataPropertyName = "CodActivo";
             this.codActivoDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.codActivoDataGridViewTextBoxColumn.HeaderText = "CodActivo";
             this.codActivoDataGridViewTextBoxColumn.Name = "codActivoDataGridViewTextBoxColumn";
             this.codActivoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codActivoDataGridViewTextBoxColumn.Width = 81;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
+            this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descripcionDataGridViewTextBoxColumn.Width = 88;
             // 
             // precioInicialDataGridViewTextBoxColumn
             // 
+            this.precioInicialDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.precioInicialDataGridViewTextBoxColumn.DataPropertyName = "PrecioInicial";
             this.precioInicialDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.precioInicialDataGridViewTextBoxColumn.HeaderText = "PrecioInicial";
             this.precioInicialDataGridViewTextBoxColumn.Name = "precioInicialDataGridViewTextBoxColumn";
             this.precioInicialDataGridViewTextBoxColumn.ReadOnly = true;
+            this.precioInicialDataGridViewTextBoxColumn.Width = 89;
             // 
             // precioActualDataGridViewTextBoxColumn
             // 
+            this.precioActualDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.precioActualDataGridViewTextBoxColumn.DataPropertyName = "PrecioActual";
             this.precioActualDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.precioActualDataGridViewTextBoxColumn.HeaderText = "PrecioActual";
             this.precioActualDataGridViewTextBoxColumn.Name = "precioActualDataGridViewTextBoxColumn";
             this.precioActualDataGridViewTextBoxColumn.ReadOnly = true;
+            this.precioActualDataGridViewTextBoxColumn.Width = 92;
             // 
             // fechaCompraDataGridViewTextBoxColumn
             // 
+            this.fechaCompraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.fechaCompraDataGridViewTextBoxColumn.DataPropertyName = "FechaCompra";
             this.fechaCompraDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.fechaCompraDataGridViewTextBoxColumn.HeaderText = "FechaCompra";
             this.fechaCompraDataGridViewTextBoxColumn.Name = "fechaCompraDataGridViewTextBoxColumn";
             this.fechaCompraDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaCompraDataGridViewTextBoxColumn.Width = 98;
             // 
             // garantiaDataGridViewTextBoxColumn
             // 
+            this.garantiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.garantiaDataGridViewTextBoxColumn.DataPropertyName = "Garantia";
             this.garantiaDataGridViewTextBoxColumn.FillWeight = 72.25043F;
             this.garantiaDataGridViewTextBoxColumn.HeaderText = "Garantia";
             this.garantiaDataGridViewTextBoxColumn.Name = "garantiaDataGridViewTextBoxColumn";
             this.garantiaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.garantiaDataGridViewTextBoxColumn.Width = 72;
             // 
             // FormActivos
             // 
