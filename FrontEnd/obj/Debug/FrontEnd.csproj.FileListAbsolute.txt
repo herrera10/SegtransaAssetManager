@@ -595,3 +595,5 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\es\M
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Proveedores.FormProveedoresInserta.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Proveedores.FormProveedoresModifica.resources

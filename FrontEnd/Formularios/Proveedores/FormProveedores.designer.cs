@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProveedores));
             this.tablaProveedores = new System.Windows.Forms.DataGridView();
             this.idProveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreProveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,17 +44,16 @@
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.proveedoresTableAdapter = new FrontEnd.ProveedoresDataSetTableAdapters.ProveedoresTableAdapter();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarNuevoProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarProveedorSeleccionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarVentanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProveedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresDataSet)).BeginInit();
             this.grpBuscar.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tablaProveedores
@@ -62,8 +62,8 @@
             this.tablaProveedores.AllowUserToDeleteRows = false;
             this.tablaProveedores.AllowUserToResizeColumns = false;
             this.tablaProveedores.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tablaProveedores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tablaProveedores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.tablaProveedores.AutoGenerateColumns = false;
             this.tablaProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tablaProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -75,18 +75,19 @@
             this.direccionDataGridViewTextBoxColumn});
             this.tablaProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tablaProveedores.DataSource = this.proveedoresBindingSource;
-            this.tablaProveedores.Location = new System.Drawing.Point(58, 189);
+            this.tablaProveedores.Location = new System.Drawing.Point(24, 150);
+            this.tablaProveedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tablaProveedores.Name = "tablaProveedores";
             this.tablaProveedores.ReadOnly = true;
             this.tablaProveedores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tablaProveedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tablaProveedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.tablaProveedores.RowHeadersVisible = false;
             this.tablaProveedores.RowTemplate.Height = 24;
             this.tablaProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -94,7 +95,7 @@
             this.tablaProveedores.ShowCellToolTips = false;
             this.tablaProveedores.ShowEditingIcon = false;
             this.tablaProveedores.ShowRowErrors = false;
-            this.tablaProveedores.Size = new System.Drawing.Size(914, 255);
+            this.tablaProveedores.Size = new System.Drawing.Size(752, 213);
             this.tablaProveedores.TabIndex = 22;
             this.tablaProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaProveedores_CellClick);
             // 
@@ -145,13 +146,13 @@
             // 
             // grpBuscar
             // 
+            this.grpBuscar.BackColor = System.Drawing.Color.DarkGray;
             this.grpBuscar.Controls.Add(this.txtBusqueda);
             this.grpBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBuscar.Location = new System.Drawing.Point(58, 81);
-            this.grpBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.grpBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.grpBuscar.Location = new System.Drawing.Point(24, 66);
             this.grpBuscar.Name = "grpBuscar";
-            this.grpBuscar.Padding = new System.Windows.Forms.Padding(4);
-            this.grpBuscar.Size = new System.Drawing.Size(386, 84);
+            this.grpBuscar.Size = new System.Drawing.Size(290, 68);
             this.grpBuscar.TabIndex = 21;
             this.grpBuscar.TabStop = false;
             this.grpBuscar.Text = "Buscar:";
@@ -160,10 +161,9 @@
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBusqueda.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.txtBusqueda.Location = new System.Drawing.Point(22, 35);
-            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBusqueda.Location = new System.Drawing.Point(6, 28);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(355, 30);
+            this.txtBusqueda.Size = new System.Drawing.Size(267, 26);
             this.txtBusqueda.TabIndex = 2;
             this.txtBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
@@ -171,11 +171,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(458, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(342, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 29);
+            this.label1.Size = new System.Drawing.Size(129, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "Proveedores";
             // 
@@ -183,69 +184,60 @@
             // 
             this.proveedoresTableAdapter.ClearBeforeFill = true;
             // 
-            // menuStrip1
+            // pictureBox1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opcionesToolStripMenuItem,
-            this.cerrarVentanaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1148, 28);
-            this.menuStrip1.TabIndex = 23;
-            this.menuStrip1.Text = "menuStrip1";
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(222, 397);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // opcionesToolStripMenuItem
+            // pictureBox2
             // 
-            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarNuevoProveedorToolStripMenuItem,
-            this.modificarProveedorToolStripMenuItem,
-            this.eliminarProveedorSeleccionadoToolStripMenuItem});
-            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(449, 397);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(76, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // agregarNuevoProveedorToolStripMenuItem
+            // pictureBox3
             // 
-            this.agregarNuevoProveedorToolStripMenuItem.Name = "agregarNuevoProveedorToolStripMenuItem";
-            this.agregarNuevoProveedorToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
-            this.agregarNuevoProveedorToolStripMenuItem.Text = "Agregar Nuevo Proveedor";
-            this.agregarNuevoProveedorToolStripMenuItem.Click += new System.EventHandler(this.agregarNuevoProveedorToolStripMenuItem_Click);
-            // 
-            // modificarProveedorToolStripMenuItem
-            // 
-            this.modificarProveedorToolStripMenuItem.Name = "modificarProveedorToolStripMenuItem";
-            this.modificarProveedorToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
-            this.modificarProveedorToolStripMenuItem.Text = "Modificar Proveedor";
-            this.modificarProveedorToolStripMenuItem.Click += new System.EventHandler(this.modificarProveedorToolStripMenuItem_Click);
-            // 
-            // eliminarProveedorSeleccionadoToolStripMenuItem
-            // 
-            this.eliminarProveedorSeleccionadoToolStripMenuItem.Name = "eliminarProveedorSeleccionadoToolStripMenuItem";
-            this.eliminarProveedorSeleccionadoToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
-            this.eliminarProveedorSeleccionadoToolStripMenuItem.Text = "Eliminar Proveedor Seleccionado";
-            this.eliminarProveedorSeleccionadoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProveedorSeleccionadoToolStripMenuItem_Click);
-            // 
-            // cerrarVentanaToolStripMenuItem
-            // 
-            this.cerrarVentanaToolStripMenuItem.Name = "cerrarVentanaToolStripMenuItem";
-            this.cerrarVentanaToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.cerrarVentanaToolStripMenuItem.Text = "Cerrar Ventana";
-            this.cerrarVentanaToolStripMenuItem.Click += new System.EventHandler(this.cerrarVentanaToolStripMenuItem_Click);
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(337, 397);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(76, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 26;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // FormProveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 491);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(787, 471);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tablaProveedores);
             this.Controls.Add(this.grpBuscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormProveedores";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormProveedores";
             this.Load += new System.EventHandler(this.FormProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaProveedores)).EndInit();
@@ -253,8 +245,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresDataSet)).EndInit();
             this.grpBuscar.ResumeLayout(false);
             this.grpBuscar.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,11 +267,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cerrarVentanaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarNuevoProveedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarProveedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarProveedorSeleccionadoToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

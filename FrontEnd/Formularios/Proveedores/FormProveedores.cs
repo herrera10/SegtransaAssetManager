@@ -1,4 +1,6 @@
 ﻿using Backend.DAL;
+using Frontend;
+using FrontEnd.Formularios;
 using FrontEnd.Formularios.Proveedores;
 using System;
 using System.Collections.Generic;
@@ -14,7 +16,7 @@ namespace FrontEnd.Formularios
 {
     public partial class FormProveedores : Form
     {
-
+        Inicio inicio = new Inicio();
         IProveedoresDAL proveedorDAL = new ProveedoresDALImpl();
 
         public FormProveedores()
@@ -118,19 +120,20 @@ namespace FrontEnd.Formularios
         {
             try
             {
-               /* FormProveedoresInserta form = new FormProveedoresInserta();
-                form.ShowDialog(this);
-                cargarProveedores();*/
+                 FormProveedoresInserta form = new FormProveedoresInserta();
+                 form.ShowDialog(this);
+                 cargarProveedores();
+              
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                MessageBox.Show("Hubo un error","Error");
+                MessageBox.Show("Hubo un error","Error" +ex);
             }
         }
 
         private void modificarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
-        {/*
+        {
             try
             {
                 FormProveedoresModifica form = new FormProveedoresModifica();
@@ -142,7 +145,67 @@ namespace FrontEnd.Formularios
 
                 MessageBox.Show("Hubo un error","Error");
             }
-            */
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormProveedoresInserta form = new FormProveedoresInserta();
+                form.ShowDialog(this);
+                cargarProveedores();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hubo un error", "Error" + ex);
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormProveedoresModifica form = new FormProveedoresModifica();
+                form.ShowDialog(this);
+                cargarProveedores();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Hubo un error", "Error");
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                try
+                {
+                    if (MessageBox.Show("Desea eliminar el proveedor?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        proveedorDAL.deleteProveedor(this.idP);
+                        MessageBox.Show("Proveedor eliminado", "Confirmacion");
+                        cargarProveedores();
+                    }
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("No se puede borrar el proveedor seleccionado", "Error");
+                }
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hubo un error", "Error");
+            }
         }
     }
 }

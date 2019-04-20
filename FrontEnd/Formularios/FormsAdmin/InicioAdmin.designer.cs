@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuVertical = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.categoriasBtn = new System.Windows.Forms.Button();
             this.mesasBtn = new System.Windows.Forms.Button();
@@ -47,9 +49,8 @@
             this.menuIcon = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.contentPnl = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.menuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tituloPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.colapsarMenuIcon)).BeginInit();
@@ -58,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.minimizarIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuVertical
@@ -76,11 +76,38 @@
             this.menuVertical.Controls.Add(this.pictureBox1);
             this.menuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuVertical.Location = new System.Drawing.Point(0, 0);
-            this.menuVertical.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menuVertical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuVertical.Name = "menuVertical";
-            this.menuVertical.Size = new System.Drawing.Size(251, 650);
+            this.menuVertical.Size = new System.Drawing.Size(188, 528);
             this.menuVertical.TabIndex = 0;
             this.menuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.menuVertical_Paint);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(52, 491);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(105, 20);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Cerrar Sesion";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(9, 476);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // btnAgregarProducto
             // 
@@ -91,12 +118,12 @@
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
             this.btnAgregarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarProducto.Image")));
             this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 391);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 318);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(251, 46);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(188, 37);
             this.btnAgregarProducto.TabIndex = 8;
-            this.btnAgregarProducto.Text = "Roles";
+            this.btnAgregarProducto.Text = "Proveedores";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
             this.btnAgregarProducto.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -109,10 +136,10 @@
             this.categoriasBtn.ForeColor = System.Drawing.Color.White;
             this.categoriasBtn.Image = ((System.Drawing.Image)(resources.GetObject("categoriasBtn.Image")));
             this.categoriasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.categoriasBtn.Location = new System.Drawing.Point(4, 340);
-            this.categoriasBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.categoriasBtn.Location = new System.Drawing.Point(3, 276);
+            this.categoriasBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoriasBtn.Name = "categoriasBtn";
-            this.categoriasBtn.Size = new System.Drawing.Size(245, 46);
+            this.categoriasBtn.Size = new System.Drawing.Size(184, 37);
             this.categoriasBtn.TabIndex = 6;
             this.categoriasBtn.Text = "Categorias";
             this.categoriasBtn.UseVisualStyleBackColor = true;
@@ -127,10 +154,10 @@
             this.mesasBtn.ForeColor = System.Drawing.Color.White;
             this.mesasBtn.Image = ((System.Drawing.Image)(resources.GetObject("mesasBtn.Image")));
             this.mesasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mesasBtn.Location = new System.Drawing.Point(4, 290);
-            this.mesasBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mesasBtn.Location = new System.Drawing.Point(3, 236);
+            this.mesasBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mesasBtn.Name = "mesasBtn";
-            this.mesasBtn.Size = new System.Drawing.Size(245, 46);
+            this.mesasBtn.Size = new System.Drawing.Size(184, 37);
             this.mesasBtn.TabIndex = 5;
             this.mesasBtn.Text = "Reportes";
             this.mesasBtn.UseVisualStyleBackColor = true;
@@ -145,10 +172,10 @@
             this.facturasBtn.ForeColor = System.Drawing.Color.White;
             this.facturasBtn.Image = ((System.Drawing.Image)(resources.GetObject("facturasBtn.Image")));
             this.facturasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.facturasBtn.Location = new System.Drawing.Point(4, 240);
-            this.facturasBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.facturasBtn.Location = new System.Drawing.Point(3, 195);
+            this.facturasBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.facturasBtn.Name = "facturasBtn";
-            this.facturasBtn.Size = new System.Drawing.Size(245, 46);
+            this.facturasBtn.Size = new System.Drawing.Size(184, 37);
             this.facturasBtn.TabIndex = 4;
             this.facturasBtn.Text = "Bitacora";
             this.facturasBtn.UseVisualStyleBackColor = true;
@@ -163,10 +190,10 @@
             this.ordenBtn.ForeColor = System.Drawing.Color.White;
             this.ordenBtn.Image = ((System.Drawing.Image)(resources.GetObject("ordenBtn.Image")));
             this.ordenBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordenBtn.Location = new System.Drawing.Point(3, 190);
-            this.ordenBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ordenBtn.Location = new System.Drawing.Point(2, 154);
+            this.ordenBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ordenBtn.Name = "ordenBtn";
-            this.ordenBtn.Size = new System.Drawing.Size(245, 46);
+            this.ordenBtn.Size = new System.Drawing.Size(184, 37);
             this.ordenBtn.TabIndex = 3;
             this.ordenBtn.Text = "Asignaciones";
             this.ordenBtn.UseVisualStyleBackColor = true;
@@ -181,10 +208,10 @@
             this.productosBtn.ForeColor = System.Drawing.Color.White;
             this.productosBtn.Image = ((System.Drawing.Image)(resources.GetObject("productosBtn.Image")));
             this.productosBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.productosBtn.Location = new System.Drawing.Point(3, 138);
-            this.productosBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productosBtn.Location = new System.Drawing.Point(2, 112);
+            this.productosBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productosBtn.Name = "productosBtn";
-            this.productosBtn.Size = new System.Drawing.Size(245, 46);
+            this.productosBtn.Size = new System.Drawing.Size(184, 37);
             this.productosBtn.TabIndex = 2;
             this.productosBtn.Text = "Usuarios";
             this.productosBtn.UseVisualStyleBackColor = true;
@@ -199,10 +226,10 @@
             this.meserosBtn.ForeColor = System.Drawing.Color.White;
             this.meserosBtn.Image = ((System.Drawing.Image)(resources.GetObject("meserosBtn.Image")));
             this.meserosBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.meserosBtn.Location = new System.Drawing.Point(4, 87);
-            this.meserosBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.meserosBtn.Location = new System.Drawing.Point(3, 71);
+            this.meserosBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.meserosBtn.Name = "meserosBtn";
-            this.meserosBtn.Size = new System.Drawing.Size(245, 46);
+            this.meserosBtn.Size = new System.Drawing.Size(184, 37);
             this.meserosBtn.TabIndex = 0;
             this.meserosBtn.Text = "Activos";
             this.meserosBtn.UseVisualStyleBackColor = true;
@@ -211,10 +238,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(181, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -230,10 +257,10 @@
             this.tituloPnl.Controls.Add(this.menuIcon);
             this.tituloPnl.Controls.Add(this.label1);
             this.tituloPnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tituloPnl.Location = new System.Drawing.Point(251, 0);
-            this.tituloPnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tituloPnl.Location = new System.Drawing.Point(188, 0);
+            this.tituloPnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tituloPnl.Name = "tituloPnl";
-            this.tituloPnl.Size = new System.Drawing.Size(1049, 70);
+            this.tituloPnl.Size = new System.Drawing.Size(787, 57);
             this.tituloPnl.TabIndex = 1;
             this.tituloPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tituloPnl_MouseDown);
             // 
@@ -241,10 +268,10 @@
             // 
             this.colapsarMenuIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colapsarMenuIcon.Image = ((System.Drawing.Image)(resources.GetObject("colapsarMenuIcon.Image")));
-            this.colapsarMenuIcon.Location = new System.Drawing.Point(5, 18);
-            this.colapsarMenuIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.colapsarMenuIcon.Location = new System.Drawing.Point(4, 15);
+            this.colapsarMenuIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.colapsarMenuIcon.Name = "colapsarMenuIcon";
-            this.colapsarMenuIcon.Size = new System.Drawing.Size(44, 30);
+            this.colapsarMenuIcon.Size = new System.Drawing.Size(33, 24);
             this.colapsarMenuIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.colapsarMenuIcon.TabIndex = 0;
             this.colapsarMenuIcon.TabStop = false;
@@ -255,10 +282,10 @@
             this.restaurarIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.restaurarIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.restaurarIcon.Image = ((System.Drawing.Image)(resources.GetObject("restaurarIcon.Image")));
-            this.restaurarIcon.Location = new System.Drawing.Point(991, 2);
-            this.restaurarIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.restaurarIcon.Location = new System.Drawing.Point(743, 2);
+            this.restaurarIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.restaurarIcon.Name = "restaurarIcon";
-            this.restaurarIcon.Size = new System.Drawing.Size(23, 17);
+            this.restaurarIcon.Size = new System.Drawing.Size(17, 14);
             this.restaurarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.restaurarIcon.TabIndex = 5;
             this.restaurarIcon.TabStop = false;
@@ -270,10 +297,10 @@
             this.maximizarIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maximizarIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.maximizarIcon.Image = ((System.Drawing.Image)(resources.GetObject("maximizarIcon.Image")));
-            this.maximizarIcon.Location = new System.Drawing.Point(991, 2);
-            this.maximizarIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maximizarIcon.Location = new System.Drawing.Point(743, 2);
+            this.maximizarIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.maximizarIcon.Name = "maximizarIcon";
-            this.maximizarIcon.Size = new System.Drawing.Size(23, 17);
+            this.maximizarIcon.Size = new System.Drawing.Size(17, 14);
             this.maximizarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.maximizarIcon.TabIndex = 4;
             this.maximizarIcon.TabStop = false;
@@ -284,10 +311,10 @@
             this.minimizarIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minimizarIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimizarIcon.Image = ((System.Drawing.Image)(resources.GetObject("minimizarIcon.Image")));
-            this.minimizarIcon.Location = new System.Drawing.Point(961, 6);
-            this.minimizarIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.minimizarIcon.Location = new System.Drawing.Point(721, 5);
+            this.minimizarIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.minimizarIcon.Name = "minimizarIcon";
-            this.minimizarIcon.Size = new System.Drawing.Size(23, 17);
+            this.minimizarIcon.Size = new System.Drawing.Size(17, 14);
             this.minimizarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.minimizarIcon.TabIndex = 3;
             this.minimizarIcon.TabStop = false;
@@ -298,10 +325,10 @@
             this.cerrarIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerrarIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cerrarIcon.Image = ((System.Drawing.Image)(resources.GetObject("cerrarIcon.Image")));
-            this.cerrarIcon.Location = new System.Drawing.Point(1020, 2);
-            this.cerrarIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cerrarIcon.Location = new System.Drawing.Point(765, 2);
+            this.cerrarIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cerrarIcon.Name = "cerrarIcon";
-            this.cerrarIcon.Size = new System.Drawing.Size(23, 17);
+            this.cerrarIcon.Size = new System.Drawing.Size(17, 14);
             this.cerrarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cerrarIcon.TabIndex = 2;
             this.cerrarIcon.TabStop = false;
@@ -311,10 +338,10 @@
             // 
             this.menuIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuIcon.Image = ((System.Drawing.Image)(resources.GetObject("menuIcon.Image")));
-            this.menuIcon.Location = new System.Drawing.Point(8, 12);
-            this.menuIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menuIcon.Location = new System.Drawing.Point(6, 10);
+            this.menuIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuIcon.Name = "menuIcon";
-            this.menuIcon.Size = new System.Drawing.Size(43, 46);
+            this.menuIcon.Size = new System.Drawing.Size(32, 37);
             this.menuIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menuIcon.TabIndex = 1;
             this.menuIcon.TabStop = false;
@@ -327,9 +354,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(383, 18);
+            this.label1.Location = new System.Drawing.Point(287, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 34);
+            this.label1.Size = new System.Drawing.Size(328, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema Inventario de Activos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -338,53 +366,29 @@
             // 
             this.contentPnl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.contentPnl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPnl.Location = new System.Drawing.Point(251, 70);
-            this.contentPnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.contentPnl.Location = new System.Drawing.Point(188, 57);
+            this.contentPnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contentPnl.Name = "contentPnl";
-            this.contentPnl.Size = new System.Drawing.Size(1049, 580);
+            this.contentPnl.Size = new System.Drawing.Size(787, 471);
             this.contentPnl.TabIndex = 2;
             this.contentPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.contentPnl_Paint);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 586);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.White;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(69, 604);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(128, 22);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Cerrar Sesion";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(1300, 650);
+            this.ClientSize = new System.Drawing.Size(975, 528);
             this.Controls.Add(this.contentPnl);
             this.Controls.Add(this.tituloPnl);
             this.Controls.Add(this.menuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuVertical.ResumeLayout(false);
             this.menuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tituloPnl.ResumeLayout(false);
             this.tituloPnl.PerformLayout();
@@ -394,7 +398,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.minimizarIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

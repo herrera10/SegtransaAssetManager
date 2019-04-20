@@ -136,7 +136,7 @@ namespace Frontend
             }
         }
 
-        private void abrirFormInPanel(object FormHijo)
+        public void abrirFormInPanel(object FormHijo)
         {
             try
             {

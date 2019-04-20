@@ -61,3 +61,4 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\bin\Debug\Backe
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.csproj.CopyComplete
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.pdb
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.csprojAssemblyReference.cache
