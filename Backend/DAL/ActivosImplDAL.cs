@@ -101,5 +101,40 @@ public class ActivosImplDAL : IActivosDAL
         nextId = nextId + 1;
         return nextId;
     }
+
+    public Activos mostrarActivo(int idActivo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void agregarActivo(Activos activos)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void actualizarActivo(Activos activos)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void eliminarActivo(int idActivo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Activos> obtenerActivos()
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<object> obtenerActivosObjetos()
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<object> buscarActivos(string busqueda)
+    {
+        throw new NotImplementedException();
+    }
 }
 

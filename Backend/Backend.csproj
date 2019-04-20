@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ActivosDALImpl.cs" />
     <Compile Include="DAL\CategoriaDALImpl.cs" />
     <Compile Include="DAL\CryptoEngine.cs" />
     <Compile Include="DAL\EstadoActivosDALImpl.cs" />

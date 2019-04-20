@@ -60,9 +60,7 @@ namespace FrontEnd
 
         private void btnActivos_Click(object sender, EventArgs e)
         {
-            frmActivos frm_Activos = new frmActivos(this);
-            frm_Activos.Show(this);
-            this.Hide();
+          
         }
 
         private void btnMisDatos_Click(object sender, EventArgs e)
@@ -74,9 +72,7 @@ namespace FrontEnd
 
         private void btnMisActivos_Click(object sender, EventArgs e)
         {
-            frmMisActivos frm_MisActivos = new frmMisActivos(usuario.IdUsuario, this);
-            frm_MisActivos.Show();
-            this.Hide();
+           
         }
         private void btnReportes_Click(object sender, EventArgs e)
         {

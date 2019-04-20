@@ -510,18 +510,13 @@ C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.pdb
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe.config
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivos.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivosAdd.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivosSearch.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmLogin.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.FrmLogin2.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMenuReporte.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMisActivos.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMisDatos.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmRepActivo.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmRepBitacora.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmReportes.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivosUpdate.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmRepProveedor.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmRepRolUsuario.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmRepUsuario.resources
@@ -603,3 +598,4 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Fron
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.EstadoActivos.FormEstadoActivoInserta.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.EstadoActivos.FormEstadoActivoModifica.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.FormEstadoActivos.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Activos.FormActivos.resources

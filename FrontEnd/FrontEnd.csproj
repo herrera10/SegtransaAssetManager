@@ -105,6 +105,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CategoriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,6 +119,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EstadoActivosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Activos\FormActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Activos\FormActivos.Designer.cs">
+      <DependentUpon>FormActivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Categorias\FormCategoriaInsertar.cs">
       <SubType>Form</SubType>
@@ -151,24 +162,6 @@
     <Compile Include="Formularios\EstadoActivos\FormEstadoActivos.designer.cs">
       <DependentUpon>FormEstadoActivos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmActivos2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmActivos2.Designer.cs">
-      <DependentUpon>frmActivos2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmActivosAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmActivosAdd.Designer.cs">
-      <DependentUpon>frmActivosAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmActivosSearch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmActivosSearch.Designer.cs">
-      <DependentUpon>frmActivosSearch.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,23 +180,11 @@
     <Compile Include="Formularios\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmMisActivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmMisActivos.Designer.cs">
-      <DependentUpon>frmMisActivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmMisDatos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmMisDatos.Designer.cs">
       <DependentUpon>frmMisDatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmActivosUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmActivosUpdate.designer.cs">
-      <DependentUpon>frmActivosUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmRepActivo.cs">
       <SubType>Form</SubType>
@@ -335,6 +316,9 @@
       <DependentUpon>SEGTRANSADataSetUsuarios.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Formularios\Activos\FormActivos.resx">
+      <DependentUpon>FormActivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Categorias\FormCategoriaInsertar.resx">
       <DependentUpon>FormCategoriaInsertar.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,15 +337,6 @@
     <EmbeddedResource Include="Formularios\EstadoActivos\FormEstadoActivos.resx">
       <DependentUpon>FormEstadoActivos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmActivos2.resx">
-      <DependentUpon>frmActivos2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmActivosAdd.resx">
-      <DependentUpon>frmActivosAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmActivosSearch.resx">
-      <DependentUpon>frmActivosSearch.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,9 +345,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmMisActivos.resx">
-      <DependentUpon>frmMisActivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMisDatos.resx">
       <DependentUpon>frmMisDatos.cs</DependentUpon>
@@ -385,9 +357,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmActivosUpdate.resx">
-      <DependentUpon>frmActivosUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmRepProveedor.resx">
       <DependentUpon>frmRepProveedor.cs</DependentUpon>
@@ -436,6 +405,17 @@
     <EmbeddedResource Include="Reportes\rptRolUsuario.rdlc" />
     <EmbeddedResource Include="Reportes\rptUsuario.rdlc" />
     <EmbeddedResource Include="Reportes\rtpBitacora.rdlc" />
+    <None Include="ActivosDataSet.xsc">
+      <DependentUpon>ActivosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ActivosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActivosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ActivosDataSet.xss">
+      <DependentUpon>ActivosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="App.Config" />
     <None Include="bin\Debug\Backend.dll.config" />
     <None Include="bin\Debug\FrontEnd.exe.config" />
@@ -716,8 +696,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Activos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

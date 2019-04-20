@@ -1,20 +1,21 @@
-﻿using System;
+﻿using Backend.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Backend.Entities;
-using Backend.DAL;
 
 namespace Backend.DAL
 {
-    public interface IActivosDAL : IDisposable
+   public interface IActivosDAL
     {
-        void Add(Activos Activo);
-        void Delete(int idActivo);
-        void Update(Activos Activo);
-        Activos GetActivo(int idActivo);
-        List<Activos> GetActivos();
-        int getNextId();
+        Activos mostrarActivo(int idActivo);
+        void agregarActivo(Activos activos);
+        void actualizarActivo(Activos activos);
+        void eliminarActivo(int idActivo);
+       
+        List<Activos> obtenerActivos();
+        List<Object> obtenerActivosObjetos();
+        List<object> buscarActivos(String busqueda);
     }
 }

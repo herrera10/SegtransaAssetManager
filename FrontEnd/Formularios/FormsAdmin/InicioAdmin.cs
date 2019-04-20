@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using FrontEnd;
 using FrontEnd.Formularios.Proveedores;
 using FrontEnd.Formularios;
+using FrontEnd.Formularios.Activos;
 
 namespace Frontend
 {
@@ -168,7 +169,7 @@ namespace Frontend
 
         private void meserosBtn_Click(object sender, EventArgs e)
         {
-           // abrirFormInPanel(new Meseros());
+            abrirFormInPanel(new FormActivos());
         }
 
         private void productosBtn_Click(object sender, EventArgs e)
