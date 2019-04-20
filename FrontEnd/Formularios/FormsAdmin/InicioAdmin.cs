@@ -27,7 +27,7 @@ namespace Frontend
             this.menuVertical.Width = 250;
             this.meserosBtn.Width = 246;
             this.facturasBtn.Width = 246;
-            this.mesasBtn.Width = 246;
+            this.btnEstados.Width = 246;
             this.ordenBtn.Width = 246;
             this.productosBtn.Width = 246;
             this.categoriasBtn.Width = 246;
@@ -186,10 +186,7 @@ namespace Frontend
            // abrirFormInPanel(new Facturas());
         }
 
-        private void mesasBtn_Click(object sender, EventArgs e)
-        {
-           // abrirFormInPanel(new Mesas());
-        }
+        
 
         private void categoriasBtn_Click(object sender, EventArgs e)
         {
@@ -221,6 +218,11 @@ namespace Frontend
             login.Dispose();
             this.Show();
 
+        }
+
+        private void btnEstados_Click(object sender, EventArgs e)
+        {
+             abrirFormInPanel(new FormEstadoActivos());
         }
     }
 }

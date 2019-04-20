@@ -76,5 +76,30 @@ public class EstadoActivosImplDAL : IEstadoActivosDAL
             throw;
         }
     }
+
+    public EstadoActivos obtenerEstadoActivosPorID(int idEstadoActivo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool addEstadoActivos(EstadoActivos estadoActivos)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool deleteEstadoActivos(int idEstadoActivo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool updateEstadoActivos(EstadoActivos estadoActivos)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<EstadoActivos> obtenerEstadoActivos()
+    {
+        throw new NotImplementedException();
+    }
 }
 

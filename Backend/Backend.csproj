@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="DAL\CategoriaDALImpl.cs" />
     <Compile Include="DAL\CryptoEngine.cs" />
+    <Compile Include="DAL\EstadoActivosDALImpl.cs" />
     <Compile Include="DAL\EstadoActivosImplDAL.cs" />
     <Compile Include="DAL\ICategoriasDAL.cs" />
     <Compile Include="DAL\IProveedoresDAL.cs" />

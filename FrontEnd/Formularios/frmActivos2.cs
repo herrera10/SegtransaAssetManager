@@ -68,9 +68,9 @@ namespace FrontEnd
                 if (listView1.SelectedItems.Count > 0)
                 {
                     Activos activo = activosDAL.GetActivo(Int32.Parse(listView1.SelectedItems[0].SubItems[0].Text));
-                    List<EstadoActivos> listaEstadosActivos = estadosActivosDAL.GetEstadoActivos();
-                    activo.EstadoActivos = estadosActivosDAL.GetEstadoActivo(2);
-                    activo.EstadoActivo = estadosActivosDAL.GetEstadoActivo(2).IdEstadoActivo;
+                    List<EstadoActivos> listaEstadosActivos = estadosActivosDAL.obtenerEstadoActivos();
+                    activo.EstadoActivos = estadosActivosDAL.obtenerEstadoActivosPorID(2);
+                    activo.EstadoActivo = estadosActivosDAL.obtenerEstadoActivosPorID(2).IdEstadoActivo;
                     activosDAL.Update(activo);
                     MessageBox.Show("Activo #" + activo.IdActivo + " desactivado.");
                 } else

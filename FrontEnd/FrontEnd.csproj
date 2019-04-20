@@ -110,6 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CategoriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EstadoActivosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadoActivosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Categorias\FormCategoriaInsertar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +132,24 @@
     </Compile>
     <Compile Include="Formularios\Categorias\FormCategorias.designer.cs">
       <DependentUpon>FormCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivoInserta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivoInserta.designer.cs">
+      <DependentUpon>FormEstadoActivoInserta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivoModifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivoModifica.designer.cs">
+      <DependentUpon>FormEstadoActivoModifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoActivos\FormEstadoActivos.designer.cs">
+      <DependentUpon>FormEstadoActivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmActivos2.cs">
       <SubType>Form</SubType>
@@ -321,6 +344,15 @@
     <EmbeddedResource Include="Formularios\Categorias\FormCategorias.resx">
       <DependentUpon>FormCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoActivos\FormEstadoActivoInserta.resx">
+      <DependentUpon>FormEstadoActivoInserta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoActivos\FormEstadoActivoModifica.resx">
+      <DependentUpon>FormEstadoActivoModifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoActivos\FormEstadoActivos.resx">
+      <DependentUpon>FormEstadoActivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmActivos2.resx">
       <DependentUpon>frmActivos2.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +449,17 @@
     </None>
     <None Include="CategoriasDataSet.xss">
       <DependentUpon>CategoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EstadoActivosDataSet.xsc">
+      <DependentUpon>EstadoActivosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EstadoActivosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstadoActivosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EstadoActivosDataSet.xss">
+      <DependentUpon>EstadoActivosDataSet.xsd</DependentUpon>
     </None>
     <None Include="obj\Release\FrontEnd.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Release\FrontEnd.csprojAssemblyReference.cache" />
@@ -675,7 +718,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formularios\Activos\" />
-    <Folder Include="Formularios\EstadoActivos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

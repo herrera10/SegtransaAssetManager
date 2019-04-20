@@ -32,7 +32,7 @@ namespace FrontEnd
             cmbBoxStt.DisplayMember = "nombreEstado";
             cmbBoxStt.ValueMember = "idEstadoActivo";
             cmbBoxStt.SelectedValue = activo.EstadoActivo;
-            cmbBoxStt.DataSource = estadoDAL.GetEstadoActivos();
+            cmbBoxStt.DataSource = estadoDAL.obtenerEstadoActivos();
 
             activo = referenciaActivo;
         }

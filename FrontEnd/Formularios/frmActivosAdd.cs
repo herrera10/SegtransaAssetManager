@@ -45,7 +45,7 @@ namespace FrontEnd
 
             cmbBoxStt.DisplayMember = "nombreEstado";
             cmbBoxStt.ValueMember = "idEstadoActivo";
-            List<EstadoActivos> estadosActivos = estadosDAL.GetEstadoActivos();
+            List<EstadoActivos> estadosActivos = estadosDAL.obtenerEstadoActivos();
 
             cmbBoxPrvdr.DataSource = proveedor;
             cmbBoxStt.DataSource = estadosActivos;
