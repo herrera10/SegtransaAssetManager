@@ -54,10 +54,10 @@ C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\Backend\obj\Debug\Backend.csproj.CopyComplete
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\Backend\obj\Debug\Backend.dll
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\Backend\obj\Debug\Backend.pdb
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\bin\Debug\Backend.dll.config
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\bin\Debug\Backend.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\bin\Debug\Backend.pdb
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.csproj.CopyComplete
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\Backend\obj\Debug\Backend.pdb

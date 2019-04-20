@@ -16,7 +16,7 @@ namespace FrontEnd
     {
         Form previousForm;
         IActivosDAL activosDAL = new ActivosImplDAL();
-        IProveedoresDAL proveedores = new ProveedoresImplDAL();
+        IProveedoresDAL proveedores = new ProveedoresDALImpl();
         IEstadoActivosDAL estadoDAL = new EstadoActivosImplDAL();
         Activos activo = new Activos();
 
@@ -28,7 +28,7 @@ namespace FrontEnd
             cmbBoxPrvdr.DisplayMember = "nombre";
             cmbBoxPrvdr.ValueMember = "idProveedor";
             cmbBoxPrvdr.SelectedValue = activo.Proveedor;
-            cmbBoxPrvdr.DataSource = proveedores.GetProveedores();
+            cmbBoxPrvdr.DataSource = proveedores.obtenerProveedores();
             cmbBoxStt.DisplayMember = "nombreEstado";
             cmbBoxStt.ValueMember = "idEstadoActivo";
             cmbBoxStt.SelectedValue = activo.EstadoActivo;

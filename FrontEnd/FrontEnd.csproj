@@ -213,6 +213,18 @@
     <Compile Include="Formularios\FormNoAdmin\InicioNoAdmin.Designer.cs">
       <DependentUpon>InicioNoAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Proveedores\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedores\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedores\FormProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedores\FormProveedores.designer.cs">
+      <DependentUpon>FormProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -229,6 +241,11 @@
     </Compile>
     <Compile Include="Formularios\frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SEGTRANSADataSetActivo.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -321,6 +338,9 @@
     <EmbeddedResource Include="Formularios\FormNoAdmin\InicioNoAdmin.resx">
       <DependentUpon>InicioNoAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedores\FormProveedores.resx">
+      <DependentUpon>FormProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -350,6 +370,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ProveedoresDataSet.xsc">
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProveedoresDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProveedoresDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProveedoresDataSet.xss">
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </None>
     <None Include="SEGTRANSADataSetActivo.xsc">
       <DependentUpon>SEGTRANSADataSetActivo.xsd</DependentUpon>
     </None>
@@ -575,7 +606,6 @@
     <Folder Include="Formularios\Activos\" />
     <Folder Include="Formularios\Categorias\" />
     <Folder Include="Formularios\EstadoActivos\" />
-    <Folder Include="Formularios\Proveedores\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

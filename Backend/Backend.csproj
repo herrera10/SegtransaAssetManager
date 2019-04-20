@@ -53,16 +53,16 @@
   <ItemGroup>
     <Compile Include="DAL\CryptoEngine.cs" />
     <Compile Include="DAL\EstadoActivosImplDAL.cs" />
+    <Compile Include="DAL\IProveedoresDAL.cs" />
     <Compile Include="DAL\IRolUsuariosDAL.cs" />
+    <Compile Include="DAL\ProveedoresDALImpl.cs" />
     <Compile Include="DAL\ReportesImplDAL.cs" />
-    <Compile Include="DAL\ProveedoresImplDAL.cs" />
     <Compile Include="DAL\RolUsuariosImplDAL.cs" />
     <Compile Include="DAL\UsuariosImplDAL.cs" />
     <Compile Include="DAL\AsignacionesImplDAL.cs" />
     <Compile Include="DAL\ActivosImplDAL.cs" />
     <Compile Include="DAL\IActivosDAL.cs" />
     <Compile Include="DAL\IReportesDAL.cs" />
-    <Compile Include="DAL\IProveedoresDAL.cs" />
     <Compile Include="DAL\IAsignacionesDAL.cs" />
     <Compile Include="DAL\IEstadoActivosDAL.cs" />
     <Compile Include="DAL\IUsuariosDAL.cs" />

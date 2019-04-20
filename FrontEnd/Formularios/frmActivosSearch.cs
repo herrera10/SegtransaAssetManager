@@ -15,7 +15,7 @@ namespace FrontEnd
     public partial class frmActivosSearch : Form
     {
         IActivosDAL activosDAL = new ActivosImplDAL();
-        IProveedoresDAL proveedoresDAL = new ProveedoresImplDAL();
+        IProveedoresDAL proveedoresDAL = new ProveedoresDALImpl();
         IEstadoActivosDAL estadoActivosDAL = new EstadoActivosImplDAL();
 
         public frmActivosSearch(Form prvForm)
@@ -43,7 +43,7 @@ namespace FrontEnd
                 int valProveedor = activo.Proveedor.Value;
                 lblValNombre.Text = activo.CodActivo;
                 lblValPrcIni.Text = activo.PrecioInicial.ToString();
-                lblValProveedor.Text = proveedoresDAL.GetProveedor(valProveedor).NombreProveedor;
+                lblValProveedor.Text = proveedoresDAL.obtenerProveedorPorID(valProveedor).NombreProveedor;
                 lblValDesc.Text = activo.Descripcion;
                 valProveedor = estadoActivosDAL.GetEstadoActivo(activo.EstadoActivo.Value).IdEstadoActivo;
                 lblValStt.Text = estadoActivosDAL.GetEstadoActivo(valProveedor).NombreEstado;

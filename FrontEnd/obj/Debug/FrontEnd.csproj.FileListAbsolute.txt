@@ -509,12 +509,12 @@ C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe
 C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.pdb
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe.config
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivos.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivosAdd.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmActivosSearch.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmLogin.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.FrmLogin2.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMenuReporte.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMisActivos.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmMisDatos.resources
@@ -528,10 +528,13 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Fron
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmUsuarios.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmUsuariosAgrega.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.frmUsuariosModifica.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Inicio.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Frontend.Inicio.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.InicioNoAdmin.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.FormProveedores.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Properties.Resources.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.GenerateResource.cache
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -541,6 +544,7 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Fron
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\FrontEnd.pdb
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Backend.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.CSharp.dll
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\System.ComponentModel.DataAnnotations.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\System.Data.DataSetExtensions.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\System.Data.dll
@@ -584,13 +588,10 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Micr
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\VSLangProj2.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Backend.pdb
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Backend.dll.config
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.exe
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.pdb
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.InicioNoAdmin.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.FrmLogin2.resources
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
-C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml

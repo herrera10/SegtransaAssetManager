@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using FrontEnd;
+using FrontEnd.Formularios.Proveedores;
+using FrontEnd.Formularios;
 
 namespace Frontend
 {
@@ -201,7 +203,7 @@ namespace Frontend
 
         private void button1_Click(object sender, EventArgs e)
         {
-          //  abrirFormInPanel(new agregarProductosOrden());
+            abrirFormInPanel(new FormProveedores());
         }
 
         private void menuVertical_Paint(object sender, PaintEventArgs e)
