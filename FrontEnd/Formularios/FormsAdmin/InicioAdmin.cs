@@ -193,7 +193,7 @@ namespace Frontend
 
         private void categoriasBtn_Click(object sender, EventArgs e)
         {
-           // abrirFormInPanel(new Categorias());
+            abrirFormInPanel(new FormCategorias());
         }
 
         private void contentPnl_Paint(object sender, PaintEventArgs e)

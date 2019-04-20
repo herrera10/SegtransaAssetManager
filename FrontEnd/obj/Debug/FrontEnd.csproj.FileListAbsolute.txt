@@ -597,3 +597,6 @@ C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\Fron
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.pdb
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Proveedores.FormProveedoresInserta.resources
 C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Proveedores.FormProveedoresModifica.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Categorias.FormCategoriaInsertar.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.Categorias.FormModificaCategoria.resources
+C:\Users\randa\OneDrive\Escritorio\SegtransaAssetManager\FrontEnd\obj\Debug\FrontEnd.Formularios.FormCategorias.resources

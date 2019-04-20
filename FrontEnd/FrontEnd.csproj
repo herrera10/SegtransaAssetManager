@@ -105,6 +105,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategoriaInsertar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategoriaInsertar.designer.cs">
+      <DependentUpon>FormCategoriaInsertar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategoriaModifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategoriaModifica.designer.cs">
+      <DependentUpon>FormCategoriaModifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Categorias\FormCategorias.designer.cs">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmActivos2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +276,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SegtransaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SegtransaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SEGTRANSADataSetActivo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -284,6 +312,15 @@
       <DependentUpon>SEGTRANSADataSetUsuarios.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Formularios\Categorias\FormCategoriaInsertar.resx">
+      <DependentUpon>FormCategoriaInsertar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Categorias\FormCategoriaModifica.resx">
+      <DependentUpon>FormCategoriaModifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Categorias\FormCategorias.resx">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmActivos2.resx">
       <DependentUpon>frmActivos2.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +407,17 @@
     <None Include="App.Config" />
     <None Include="bin\Debug\Backend.dll.config" />
     <None Include="bin\Debug\FrontEnd.exe.config" />
+    <None Include="CategoriasDataSet.xsc">
+      <DependentUpon>CategoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CategoriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CategoriasDataSet.xss">
+      <DependentUpon>CategoriasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="obj\Release\FrontEnd.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Release\FrontEnd.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
@@ -392,6 +440,17 @@
     </None>
     <None Include="ProveedoresDataSet.xss">
       <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SegtransaDataSet.xsc">
+      <DependentUpon>SegtransaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SegtransaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SegtransaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SegtransaDataSet.xss">
+      <DependentUpon>SegtransaDataSet.xsd</DependentUpon>
     </None>
     <None Include="SEGTRANSADataSetActivo.xsc">
       <DependentUpon>SEGTRANSADataSetActivo.xsd</DependentUpon>
@@ -616,7 +675,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formularios\Activos\" />
-    <Folder Include="Formularios\Categorias\" />
     <Folder Include="Formularios\EstadoActivos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
