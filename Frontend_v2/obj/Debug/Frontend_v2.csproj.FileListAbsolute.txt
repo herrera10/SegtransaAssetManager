@@ -1,0 +1,2 @@
+C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\Frontend_v2\obj\Debug\Frontend.exe
+C:\Users\Practicas\Documents\UFD\Analisis 2\Proyecto\segtransa_analisis2-master\Proyecto Programado Analisis 1\Archivos Finales de Proyecto\VisualStudio\SegtransaAssetManager\Frontend_v2\obj\Debug\Frontend.pdb

@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FE07DFD-0371-424F-AA8F-9D56D001BDE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarCategoria.Designer.cs">
+      <DependentUpon>agregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarMesa.Designer.cs">
+      <DependentUpon>agregarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarMesero.Designer.cs">
+      <DependentUpon>agregarMesero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarOrden.Designer.cs">
+      <DependentUpon>agregarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarProducto.Designer.cs">
+      <DependentUpon>agregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarProductosOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\agregarProductosOrden.Designer.cs">
+      <DependentUpon>agregarProductosOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsAgregar\Form1.Designer.cs" />
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarCategoria.Designer.cs">
+      <DependentUpon>editarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarMesa.Designer.cs">
+      <DependentUpon>editarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarMesero.Designer.cs">
+      <DependentUpon>editarMesero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\FormsEditarEliminar\editarProducto.Designer.cs">
+      <DependentUpon>editarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Mesas.Designer.cs">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Meseros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Meseros.Designer.cs">
+      <DependentUpon>Meseros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Frontend_v2\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Frontend_v2\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Frontend_v2\Ordenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Ordenes.Designer.cs">
+      <DependentUpon>Ordenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Program.cs" />
+    <Compile Include="Frontend_v2\PROIVDataSet.Designer.cs" />
+    <Compile Include="Frontend_v2\PROIVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROIVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Properties\AssemblyInfo.cs" />
+    <Compile Include="Frontend_v2\Properties\Resources.Designer.cs" />
+    <Compile Include="Frontend_v2\Properties\Settings.Designer.cs" />
+    <Compile Include="Frontend_v2\Reportes\DataSet1.Designer.cs" />
+    <Compile Include="Frontend_v2\Reportes\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\Reportes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend_v2\Reportes\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend_v2\SqlServerTypes\Loader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend_v2\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Facturas.resx">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarCategoria.resx">
+      <DependentUpon>agregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarMesa.resx">
+      <DependentUpon>agregarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarMesero.resx">
+      <DependentUpon>agregarMesero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarOrden.resx">
+      <DependentUpon>agregarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarProducto.resx">
+      <DependentUpon>agregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsAgregar\agregarProductosOrden.resx">
+      <DependentUpon>agregarProductosOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsEditarEliminar\editarCategoria.resx">
+      <DependentUpon>editarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsEditarEliminar\editarMesa.resx">
+      <DependentUpon>editarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsEditarEliminar\editarMesero.resx">
+      <DependentUpon>editarMesero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\FormsEditarEliminar\editarProducto.resx">
+      <DependentUpon>editarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Mesas.resx">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Meseros.resx">
+      <DependentUpon>Meseros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Categorias.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Facturas.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarCategoria.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarMesa.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarMesero.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarOrden.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarProducto.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsAgregar.agregarProductosOrden.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsEditarEliminar.editarCategoria.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsEditarEliminar.editarMesa.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsEditarEliminar.editarMesero.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.FormsEditarEliminar.editarProducto.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Inicio.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Mesas.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Meseros.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Ordenes.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Productos.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Properties.Resources.resources" />
+    <EmbeddedResource Include="Frontend_v2\obj\Debug\Frontend.Reportes.Form1.resources" />
+    <EmbeddedResource Include="Frontend_v2\Ordenes.resx">
+      <DependentUpon>Ordenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend_v2\Properties\Resources.resx" />
+    <EmbeddedResource Include="Frontend_v2\Reportes\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Frontend_v2\.vs\Frontend_v2\v15\.suo" />
+    <None Include="Frontend_v2\App.config" />
+    <None Include="Frontend_v2\bin\Debug\Backend.dll.config" />
+    <None Include="Frontend_v2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Frontend_v2\obj\Debug\Frontend.csproj.CopyComplete" />
+    <None Include="Frontend_v2\obj\Debug\Frontend.csproj.CoreCompileInputs.cache" />
+    <None Include="Frontend_v2\obj\Debug\Frontend.csproj.GenerateResource.cache" />
+    <None Include="Frontend_v2\obj\Debug\Frontend.csprojAssemblyReference.cache" />
+    <None Include="Frontend_v2\obj\Debug\Frontend.exe.config" />
+    <None Include="Frontend_v2\packages.config" />
+    <None Include="Frontend_v2\PROIVDataSet.xsc">
+      <DependentUpon>PROIVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Frontend_v2\PROIVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROIVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Frontend_v2\PROIVDataSet.xss">
+      <DependentUpon>PROIVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Frontend_v2\Properties\DataSources\Backend.Model.CATEGORIA.datasource" />
+    <None Include="Frontend_v2\Properties\DataSources\Backend.Model.FACTURA.datasource" />
+    <None Include="Frontend_v2\Properties\DataSources\Backend.Model.MESA.datasource" />
+    <None Include="Frontend_v2\Properties\DataSources\Backend.Model.MESERO.datasource" />
+    <None Include="Frontend_v2\Properties\DataSources\Backend.Model.PRODUCTO.datasource" />
+    <None Include="Frontend_v2\Properties\Settings.settings" />
+    <None Include="Frontend_v2\Reportes\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Frontend_v2\Reportes\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Frontend_v2\Reportes\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Frontend_v2\Reportes\Report1.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frontend_v2\bin\Debug\Backend.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Backend.pdb" />
+    <Content Include="Frontend_v2\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\EntityFramework.dll" />
+    <Content Include="Frontend_v2\bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="Frontend_v2\bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="Frontend_v2\bin\Debug\EntityFramework.xml" />
+    <Content Include="Frontend_v2\bin\Debug\EnvDTE.dll" />
+    <Content Include="Frontend_v2\bin\Debug\EnvDTE80.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.Build.Framework.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.Build.Tasks.Core.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.Build.Utilities.Core.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.MSXML.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.SqlServer.Types.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Data.Core.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Data.Services.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.GraphModel.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Microsoft.VisualStudio.VSHelp.dll" />
+    <Content Include="Frontend_v2\bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="Frontend_v2\bin\Debug\nunit.engine.api.dll" />
+    <Content Include="Frontend_v2\bin\Debug\nunit.engine.dll" />
+    <Content Include="Frontend_v2\bin\Debug\NUnit3.TestAdapter.dll" />
+    <Content Include="Frontend_v2\bin\Debug\NUnit3.TestAdapter.pdb" />
+    <Content Include="Frontend_v2\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\stdole.dll" />
+    <Content Include="Frontend_v2\bin\Debug\System.Threading.Tasks.Dataflow.dll" />
+    <Content Include="Frontend_v2\bin\Debug\VSLangProj.dll" />
+    <Content Include="Frontend_v2\bin\Debug\VSLangProj2.dll" />
+    <Content Include="Frontend_v2\bin\Debug\VSLangProj80.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="Frontend_v2\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Frontend_v2\Frontend_v2.csproj" />
+    <Content Include="Frontend_v2\Images\logo.png" />
+    <Content Include="Frontend_v2\obj\Debug\Frontend.csproj.FileListAbsolute.txt" />
+    <Content Include="Frontend_v2\obj\Debug\Frontend.exe" />
+    <Content Include="Frontend_v2\obj\Debug\Frontend.pdb" />
+    <Content Include="Frontend_v2\obj\Debug\Frontend_v2.csproj.FileListAbsolute.txt" />
+    <Content Include="Frontend_v2\obj\Debug\TempPE\PROIVDataSet.Designer.cs.dll" />
+    <Content Include="Frontend_v2\obj\Debug\TempPE\Reportes.DataSet1.Designer.cs.dll" />
+    <Content Include="Frontend_v2\SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Frontend_v2\SqlServerTypes\x64\" />
+    <Folder Include="Frontend_v2\SqlServerTypes\x86\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
